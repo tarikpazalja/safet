@@ -1,0 +1,130 @@
+---
+metadata:
+  name: SVOJSTVA POSLANIKOVOG, SALLALLAHU ALEJHI VE SELLEM, NAMAZA od abdesta do zikra
+  short_name: Namaz
+  description: Jedan od ciljeva pisanja ove knjige jeste pokušaj da se kod ljudi na našim prostorima pobudi želja za obavljanjem namaza i ojača svijest o njegovom mjestu u islamu.
+  language: en
+  pathPrefix: '/'
+  siteImage: '/assets/slika3.png'
+  favicon: '/assets/favicon.png'
+  themeColor: '#ff0000'
+header:
+  enabled: true
+  logo: '/assets/code.svg'
+  logoLink: '/'
+  helpUrl: ''
+  links:
+    - text: Facebook
+      link: https://www.facebook.com/pezicelvedin
+      external: true
+    - text: YouTube
+      link: https://www.youtube.com/channel/UC6q1XyH9XL0CRjt3Q1SY83w
+      external: true
+    - text: Audio
+      link: 'https://castbox.fm/channel/Elvedin-Pezi%C4%87---Namaz-radost-oka-moga-id3509574?country=us'
+      external: true
+sidebar:
+  enabled: true
+  # forcedNavOrder:
+  #   - "/introduction"
+  #   - "/configuration/basic"
+  #   - "/configuration/advanced"
+  # expanded:
+  groups:
+    - order: 1
+      path: '/vrijednostnamaza'
+      title: ':kaaba: Vrijednost namaza'
+    - order: 2
+      path: '/greskeunamazu'
+      title: ':kaaba: Greške u namazu'
+    - order: 3
+      path: '/skrusenostunamazu'
+      title: ':kaaba: Skrušenost u namazu'
+
+  links:
+    # - text: BooGi
+    #   link: https://github.com/filipowm/boogi
+    # - text: React
+    #   link: https://reactjs.org
+  ignoreIndex: false
+  poweredBy:
+    # trademark: '/assets/gatsby.png'
+    # name: GatsbyJS
+    # link: https://www.gatsbyjs.org
+pwa:
+  enabled: true
+  manifest:
+    display: standalone
+    crossOrigin: anonymous
+    icon: '/assets/favicon.png'
+
+social:
+  facebook: https://www.facebook.com/pezicelvedin
+  youtube: https://www.youtube.com/channel/UC6q1XyH9XL0CRjt3Q1SY83w
+
+features:
+  darkMode:
+    enabled: true
+    default: false
+  editOnRepo:
+    location: https://github.com/filipowm/boogi
+    type: github
+    editable: false
+  mermaid:
+    language: 'mermaid'
+    theme: 'dark'
+    options:
+    width: 400
+    height: 300
+  pageProgress:
+    enabled: true
+    includePaths:
+      - '/configuration/settingup/features'
+    excludePaths:
+      - '/'
+    height: 3
+    prependToBody: false
+    color: '#A05EB5'
+  previousNext:
+    enabled: true
+    arrowKeyNavigation: true
+  propagateNetlifyEnv: true
+  rss:
+    enabled: true
+    title: BooGi Docs
+    showIcon: false
+    copyright: 'Elvedin Pezić'
+    webMaster: 'Elvedin Pezić'
+    managingEditor: 'Elvedin Pezić'
+    categories:
+      - Docs as Code
+      - GatsbyJS
+    ttl: 60
+    matchRegex: '^/'
+    outputPath: '/rss.xml'
+    generator: 'boogi'
+  scrollTop: true
+  search:
+    enabled: true
+    engine: 'localsearch'
+    placeholder: 'Search'
+    startComponent: 'input' # icon
+    excerptSize: 20000
+    debounceTime: 380
+    snippetLength: 23
+    hitsPerPage: 10
+    showStats: true
+    pagination:
+      enabled: true
+      totalPages: 10
+      showPrevious: true
+      showNext: true
+  showMetadata: true
+  toc:
+    show: true
+    depth: 4
+  fullScreenMode:
+    enabled: true
+    hideHeader: true
+    hideToc: true
+    hideSidebar: true
